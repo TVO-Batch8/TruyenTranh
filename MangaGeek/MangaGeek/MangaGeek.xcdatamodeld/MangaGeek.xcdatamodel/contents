@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CHAPTER" syncable="YES">
+        <attribute name="chapterID" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="chapterName" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="chapterURL" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="mangaID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chapToContent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CONTENT" inverseName="contentToChap" inverseEntity="CONTENT" syncable="YES"/>
+        <relationship name="chapToManga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MANGA" inverseName="mangaToChap" inverseEntity="MANGA" syncable="YES"/>
+    </entity>
+    <entity name="CONTENT" syncable="YES">
+        <attribute name="chapterID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="contentToChap" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CHAPTER" inverseName="chapToContent" inverseEntity="CHAPTER" syncable="YES"/>
+    </entity>
+    <entity name="FAVORITE" syncable="YES">
+        <attribute name="chapterID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="MANGA" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mangaID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mangaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbail" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mangaToChap" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CHAPTER" inverseName="chapToManga" inverseEntity="CHAPTER" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CHAPTER" positionX="171" positionY="-162" width="128" height="133"/>
+        <element name="CONTENT" positionX="342" positionY="-133" width="128" height="88"/>
+        <element name="FAVORITE" positionX="162" positionY="-108" width="128" height="88"/>
+        <element name="MANGA" positionX="-18" positionY="-162" width="128" height="133"/>
+    </elements>
+</model>

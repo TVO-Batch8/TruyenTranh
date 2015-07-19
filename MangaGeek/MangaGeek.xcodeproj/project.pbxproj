@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF888ABD1B52745D00DB1E78 /* CONTENT_3T.json in Resources */ = {isa = PBXBuildFile; fileRef = CF888ABC1B52745D00DB1E78 /* CONTENT_3T.json */; };
+		CF888ABF1B52747D00DB1E78 /* CONTENT_GG.json in Resources */ = {isa = PBXBuildFile; fileRef = CF888ABE1B52747D00DB1E78 /* CONTENT_GG.json */; };
+		CFA516991B4FF50E005FA715 /* TestContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA516981B4FF50E005FA715 /* TestContent.m */; };
+		CFA5169C1B5031E4005FA715 /* PageViewContentChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA5169B1B5031E4005FA715 /* PageViewContentChapter.m */; };
+		CFA9423A1B4EB70D00AC0346 /* Bleach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942301B4EB70D00AC0346 /* Bleach.jpeg */; };
+		CFA9423B1B4EB70D00AC0346 /* Doreamon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942311B4EB70D00AC0346 /* Doreamon.jpg */; };
+		CFA9423C1B4EB70D00AC0346 /* DragonBall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942321B4EB70D00AC0346 /* DragonBall.jpg */; };
+		CFA9423D1B4EB70D00AC0346 /* Gintama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942331B4EB70D00AC0346 /* Gintama.jpg */; };
+		CFA9423E1B4EB70D00AC0346 /* InuYasha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942341B4EB70D00AC0346 /* InuYasha.jpg */; };
+		CFA9423F1B4EB70D00AC0346 /* NarutoShippuden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942351B4EB70D00AC0346 /* NarutoShippuden.jpg */; };
+		CFA942401B4EB70D00AC0346 /* OnePiece.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942361B4EB70D00AC0346 /* OnePiece.jpg */; };
+		CFA942411B4EB70D00AC0346 /* Pokemon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942371B4EB70D00AC0346 /* Pokemon.jpg */; };
+		CFA942421B4EB70D00AC0346 /* Princess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942381B4EB70D00AC0346 /* Princess.jpg */; };
+		CFA942431B4EB70D00AC0346 /* UQHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA942391B4EB70D00AC0346 /* UQHolder.png */; };
+		CFA942451B4EBEF400AC0346 /* Subasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942441B4EBEF400AC0346 /* Subasa.jpg */; };
+		CFA942491B4EBEFE00AC0346 /* Oresama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA942481B4EBEFE00AC0346 /* Oresama.jpg */; };
+		CFA9424B1B4EBF2000AC0346 /* Conan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA9424A1B4EBF2000AC0346 /* Conan.jpg */; };
+		CFA9424E1B4ECD7E00AC0346 /* AddChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA9424D1B4ECD7E00AC0346 /* AddChapter.m */; };
+		CFA942511B4ECD9500AC0346 /* ShowChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA942501B4ECD9500AC0346 /* ShowChapter.m */; };
+		CFA942541B4ECDA700AC0346 /* AddContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA942531B4ECDA700AC0346 /* AddContent.m */; };
+		CFA942571B4ECDB600AC0346 /* ShowContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA942561B4ECDB600AC0346 /* ShowContent.m */; };
+		CFAA76551B5A02A600FAC355 /* background4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFAA76541B5A02A600FAC355 /* background4.jpg */; };
+		CFAA76571B5A069100FAC355 /* background5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFAA76561B5A069100FAC355 /* background5.jpg */; };
+		CFABC22D1B4C091C0022E390 /* MangaInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = CFABC22C1B4C091C0022E390 /* MangaInfo.json */; };
+		CFAE48EB1B4E02DA003140AB /* ShowManga.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE48EA1B4E02DA003140AB /* ShowManga.m */; };
+		CFAE48ED1B4E13FC003140AB /* MANGA.json in Resources */ = {isa = PBXBuildFile; fileRef = CFAE48EC1B4E13FC003140AB /* MANGA.json */; };
+		CFAE48EF1B4E1412003140AB /* CHAPTER.json in Resources */ = {isa = PBXBuildFile; fileRef = CFAE48EE1B4E1412003140AB /* CHAPTER.json */; };
+		CFAE48F11B4E1429003140AB /* CONTENT.json in Resources */ = {isa = PBXBuildFile; fileRef = CFAE48F01B4E1429003140AB /* CONTENT.json */; };
+		CFAE48F41B4E1B70003140AB /* TestParseJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE48F31B4E1B70003140AB /* TestParseJson.m */; };
+		CFAE48F71B4E6936003140AB /* CollecListManga.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE48F61B4E6936003140AB /* CollecListManga.m */; };
+		CFAE48FA1B4E6A51003140AB /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE48F91B4E6A51003140AB /* ImageCollectionViewCell.m */; };
+		CFAE48FC1B4E6A57003140AB /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFAE48FB1B4E6A57003140AB /* ImageCollectionViewCell.xib */; };
+		CFB5140A1B4D7931005FF8FA /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB514091B4D7931005FF8FA /* TestCoreData.m */; };
+		CFB64FB81B595319008DBD16 /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB64FB71B595319008DBD16 /* Favorite.m */; };
+		CFC139561B4F6E74000AA73E /* ListChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC139551B4F6E74000AA73E /* ListChapter.m */; };
+		CFC139591B4F7817000AA73E /* Background1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC139581B4F7817000AA73E /* Background1.png */; };
+		CFC1395D1B4F7DCD000AA73E /* Background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFC1395C1B4F7DCD000AA73E /* Background2.jpg */; };
+		CFC5E22E1B4BD2240065F26A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E22D1B4BD2240065F26A /* main.m */; };
+		CFC5E2311B4BD2240065F26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E2301B4BD2240065F26A /* AppDelegate.m */; };
+		CFC5E2341B4BD2240065F26A /* MangaGeek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E2321B4BD2240065F26A /* MangaGeek.xcdatamodeld */; };
+		CFC5E2371B4BD2240065F26A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E2361B4BD2240065F26A /* ViewController.m */; };
+		CFC5E23A1B4BD2240065F26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E2381B4BD2240065F26A /* Main.storyboard */; };
+		CFC5E23C1B4BD2240065F26A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E23B1B4BD2240065F26A /* Images.xcassets */; };
+		CFC5E23F1B4BD2240065F26A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E23D1B4BD2240065F26A /* LaunchScreen.xib */; };
+		CFC5E24B1B4BD2260065F26A /* MangaGeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E24A1B4BD2260065F26A /* MangaGeekTests.m */; };
+		CFC5E2561B4BD2C60065F26A /* MangaData.json in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E2551B4BD2C60065F26A /* MangaData.json */; };
+		CFC5E2581B4BD2D70065F26A /* JsonTest.json in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E2571B4BD2D70065F26A /* JsonTest.json */; };
+		CFC5E2601B4BD34D0065F26A /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E25F1B4BD34D0065F26A /* CustomTableCell.m */; };
+		CFC5E2621B4BD3570065F26A /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E2611B4BD3570065F26A /* CustomTableCell.xib */; };
+		CFC5E2641B4BD35D0065F26A /* manga.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CFC5E2631B4BD35D0065F26A /* manga.jpeg */; };
+		CFC5E26B1B4BD6A20065F26A /* ListManga.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E26A1B4BD6A20065F26A /* ListManga.m */; };
+		CFCB73711B56824E00540037 /* CacheImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCB73701B56824E00540037 /* CacheImage.m */; };
+		CFF5527C1B54F27C0055BF01 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5525C1B54F27C0055BF01 /* MKAnnotationView+WebCache.m */; };
+		CFF5527D1B54F27C0055BF01 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5525E1B54F27C0055BF01 /* NSData+ImageContentType.m */; };
+		CFF5527E1B54F27C0055BF01 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552601B54F27C0055BF01 /* SDImageCache.m */; };
+		CFF5527F1B54F27C0055BF01 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552621B54F27C0055BF01 /* SDWebImageCompat.m */; };
+		CFF552801B54F27C0055BF01 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552641B54F27C0055BF01 /* SDWebImageDecoder.m */; };
+		CFF552811B54F27C0055BF01 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552661B54F27C0055BF01 /* SDWebImageDownloader.m */; };
+		CFF552821B54F27C0055BF01 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552681B54F27C0055BF01 /* SDWebImageDownloaderOperation.m */; };
+		CFF552831B54F27C0055BF01 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5526A1B54F27C0055BF01 /* SDWebImageManager.m */; };
+		CFF552841B54F27C0055BF01 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5526D1B54F27C0055BF01 /* SDWebImagePrefetcher.m */; };
+		CFF552851B54F27C0055BF01 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5526F1B54F27C0055BF01 /* UIButton+WebCache.m */; };
+		CFF552861B54F27C0055BF01 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552711B54F27C0055BF01 /* UIImage+GIF.m */; };
+		CFF552871B54F27C0055BF01 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552731B54F27C0055BF01 /* UIImage+MultiFormat.m */; };
+		CFF552881B54F27C0055BF01 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552751B54F27C0055BF01 /* UIImage+WebP.m */; };
+		CFF552891B54F27C0055BF01 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552771B54F27C0055BF01 /* UIImageView+HighlightedWebCache.m */; };
+		CFF5528A1B54F27C0055BF01 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF552791B54F27C0055BF01 /* UIImageView+WebCache.m */; };
+		CFF5528B1B54F27C0055BF01 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF5527B1B54F27C0055BF01 /* UIView+WebCacheOperation.m */; };
+		CFF5528D1B54F4990055BF01 /* Loading.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5528C1B54F4990055BF01 /* Loading.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFC5E2451B4BD2260065F26A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC5E2201B4BD2230065F26A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC5E2271B4BD2230065F26A;
+			remoteInfo = MangaGeek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF888ABC1B52745D00DB1E78 /* CONTENT_3T.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CONTENT_3T.json; sourceTree = "<group>"; };
+		CF888ABE1B52747D00DB1E78 /* CONTENT_GG.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CONTENT_GG.json; sourceTree = "<group>"; };
+		CFA516971B4FF50E005FA715 /* TestContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestContent.h; sourceTree = "<group>"; };
+		CFA516981B4FF50E005FA715 /* TestContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestContent.m; sourceTree = "<group>"; };
+		CFA5169A1B5031E4005FA715 /* PageViewContentChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewContentChapter.h; sourceTree = "<group>"; };
+		CFA5169B1B5031E4005FA715 /* PageViewContentChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewContentChapter.m; sourceTree = "<group>"; };
+		CFA942301B4EB70D00AC0346 /* Bleach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bleach.jpeg; sourceTree = "<group>"; };
+		CFA942311B4EB70D00AC0346 /* Doreamon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Doreamon.jpg; sourceTree = "<group>"; };
+		CFA942321B4EB70D00AC0346 /* DragonBall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DragonBall.jpg; sourceTree = "<group>"; };
+		CFA942331B4EB70D00AC0346 /* Gintama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gintama.jpg; sourceTree = "<group>"; };
+		CFA942341B4EB70D00AC0346 /* InuYasha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InuYasha.jpg; sourceTree = "<group>"; };
+		CFA942351B4EB70D00AC0346 /* NarutoShippuden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NarutoShippuden.jpg; sourceTree = "<group>"; };
+		CFA942361B4EB70D00AC0346 /* OnePiece.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OnePiece.jpg; sourceTree = "<group>"; };
+		CFA942371B4EB70D00AC0346 /* Pokemon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pokemon.jpg; sourceTree = "<group>"; };
+		CFA942381B4EB70D00AC0346 /* Princess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Princess.jpg; sourceTree = "<group>"; };
+		CFA942391B4EB70D00AC0346 /* UQHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UQHolder.png; sourceTree = "<group>"; };
+		CFA942441B4EBEF400AC0346 /* Subasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Subasa.jpg; sourceTree = "<group>"; };
+		CFA942481B4EBEFE00AC0346 /* Oresama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Oresama.jpg; sourceTree = "<group>"; };
+		CFA9424A1B4EBF2000AC0346 /* Conan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Conan.jpg; sourceTree = "<group>"; };
+		CFA9424C1B4ECD7E00AC0346 /* AddChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddChapter.h; sourceTree = "<group>"; };
+		CFA9424D1B4ECD7E00AC0346 /* AddChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddChapter.m; sourceTree = "<group>"; };
+		CFA9424F1B4ECD9500AC0346 /* ShowChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowChapter.h; sourceTree = "<group>"; };
+		CFA942501B4ECD9500AC0346 /* ShowChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowChapter.m; sourceTree = "<group>"; };
+		CFA942521B4ECDA700AC0346 /* AddContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContent.h; sourceTree = "<group>"; };
+		CFA942531B4ECDA700AC0346 /* AddContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContent.m; sourceTree = "<group>"; };
+		CFA942551B4ECDB600AC0346 /* ShowContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowContent.h; sourceTree = "<group>"; };
+		CFA942561B4ECDB600AC0346 /* ShowContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowContent.m; sourceTree = "<group>"; };
+		CFAA76541B5A02A600FAC355 /* background4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background4.jpg; sourceTree = "<group>"; };
+		CFAA76561B5A069100FAC355 /* background5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background5.jpg; sourceTree = "<group>"; };
+		CFABC22C1B4C091C0022E390 /* MangaInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MangaInfo.json; sourceTree = "<group>"; };
+		CFAE48E91B4E02DA003140AB /* ShowManga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowManga.h; sourceTree = "<group>"; };
+		CFAE48EA1B4E02DA003140AB /* ShowManga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowManga.m; sourceTree = "<group>"; };
+		CFAE48EC1B4E13FC003140AB /* MANGA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MANGA.json; sourceTree = "<group>"; };
+		CFAE48EE1B4E1412003140AB /* CHAPTER.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CHAPTER.json; sourceTree = "<group>"; };
+		CFAE48F01B4E1429003140AB /* CONTENT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CONTENT.json; sourceTree = "<group>"; };
+		CFAE48F21B4E1B70003140AB /* TestParseJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestParseJson.h; sourceTree = "<group>"; };
+		CFAE48F31B4E1B70003140AB /* TestParseJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestParseJson.m; sourceTree = "<group>"; };
+		CFAE48F51B4E6936003140AB /* CollecListManga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollecListManga.h; sourceTree = "<group>"; };
+		CFAE48F61B4E6936003140AB /* CollecListManga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollecListManga.m; sourceTree = "<group>"; };
+		CFAE48F81B4E6A4A003140AB /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		CFAE48F91B4E6A51003140AB /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		CFAE48FB1B4E6A57003140AB /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		CFB514081B4D7930005FF8FA /* TestCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestCoreData.h; path = MangaGeek/TestCoreData.h; sourceTree = "<group>"; };
+		CFB514091B4D7931005FF8FA /* TestCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestCoreData.m; path = MangaGeek/TestCoreData.m; sourceTree = "<group>"; };
+		CFB64FB61B595319008DBD16 /* Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
+		CFB64FB71B595319008DBD16 /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
+		CFC139541B4F6E74000AA73E /* ListChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListChapter.h; sourceTree = "<group>"; };
+		CFC139551B4F6E74000AA73E /* ListChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListChapter.m; sourceTree = "<group>"; };
+		CFC139581B4F7817000AA73E /* Background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background1.png; sourceTree = "<group>"; };
+		CFC1395C1B4F7DCD000AA73E /* Background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background2.jpg; sourceTree = "<group>"; };
+		CFC5E2281B4BD2240065F26A /* MangaGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC5E22C1B4BD2240065F26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC5E22D1B4BD2240065F26A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFC5E22F1B4BD2240065F26A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFC5E2301B4BD2240065F26A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFC5E2331B4BD2240065F26A /* MangaGeek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MangaGeek.xcdatamodel; sourceTree = "<group>"; };
+		CFC5E2351B4BD2240065F26A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFC5E2361B4BD2240065F26A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFC5E2391B4BD2240065F26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFC5E23B1B4BD2240065F26A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFC5E23E1B4BD2240065F26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CFC5E2441B4BD2260065F26A /* MangaGeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangaGeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC5E2491B4BD2260065F26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC5E24A1B4BD2260065F26A /* MangaGeekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangaGeekTests.m; sourceTree = "<group>"; };
+		CFC5E2551B4BD2C60065F26A /* MangaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MangaData.json; sourceTree = "<group>"; };
+		CFC5E2571B4BD2D70065F26A /* JsonTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonTest.json; sourceTree = "<group>"; };
+		CFC5E25E1B4BD3470065F26A /* CustomTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		CFC5E25F1B4BD34D0065F26A /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		CFC5E2611B4BD3570065F26A /* CustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
+		CFC5E2631B4BD35D0065F26A /* manga.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manga.jpeg; sourceTree = "<group>"; };
+		CFC5E2691B4BD6A20065F26A /* ListManga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListManga.h; sourceTree = "<group>"; };
+		CFC5E26A1B4BD6A20065F26A /* ListManga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListManga.m; sourceTree = "<group>"; };
+		CFCB736F1B56824E00540037 /* CacheImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheImage.h; sourceTree = "<group>"; };
+		CFCB73701B56824E00540037 /* CacheImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheImage.m; sourceTree = "<group>"; };
+		CFF5525B1B54F27C0055BF01 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		CFF5525C1B54F27C0055BF01 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		CFF5525D1B54F27C0055BF01 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		CFF5525E1B54F27C0055BF01 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		CFF5525F1B54F27C0055BF01 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		CFF552601B54F27C0055BF01 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		CFF552611B54F27C0055BF01 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		CFF552621B54F27C0055BF01 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		CFF552631B54F27C0055BF01 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		CFF552641B54F27C0055BF01 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		CFF552651B54F27C0055BF01 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		CFF552661B54F27C0055BF01 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		CFF552671B54F27C0055BF01 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		CFF552681B54F27C0055BF01 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		CFF552691B54F27C0055BF01 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		CFF5526A1B54F27C0055BF01 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		CFF5526B1B54F27C0055BF01 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		CFF5526C1B54F27C0055BF01 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		CFF5526D1B54F27C0055BF01 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		CFF5526E1B54F27C0055BF01 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		CFF5526F1B54F27C0055BF01 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		CFF552701B54F27C0055BF01 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		CFF552711B54F27C0055BF01 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		CFF552721B54F27C0055BF01 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		CFF552731B54F27C0055BF01 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		CFF552741B54F27C0055BF01 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		CFF552751B54F27C0055BF01 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		CFF552761B54F27C0055BF01 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		CFF552771B54F27C0055BF01 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		CFF552781B54F27C0055BF01 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		CFF552791B54F27C0055BF01 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		CFF5527A1B54F27C0055BF01 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		CFF5527B1B54F27C0055BF01 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		CFF5528C1B54F4990055BF01 /* Loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFC5E2251B4BD2230065F26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5E2411B4BD2260065F26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFA9422F1B4EB70D00AC0346 /* ImageManga */ = {
+			isa = PBXGroup;
+			children = (
+				CFA942301B4EB70D00AC0346 /* Bleach.jpeg */,
+				CFA942311B4EB70D00AC0346 /* Doreamon.jpg */,
+				CFA942321B4EB70D00AC0346 /* DragonBall.jpg */,
+				CFA942331B4EB70D00AC0346 /* Gintama.jpg */,
+				CFA942341B4EB70D00AC0346 /* InuYasha.jpg */,
+				CFA942351B4EB70D00AC0346 /* NarutoShippuden.jpg */,
+				CFA942361B4EB70D00AC0346 /* OnePiece.jpg */,
+				CFA942371B4EB70D00AC0346 /* Pokemon.jpg */,
+				CFA942381B4EB70D00AC0346 /* Princess.jpg */,
+				CFA942391B4EB70D00AC0346 /* UQHolder.png */,
+				CFA942441B4EBEF400AC0346 /* Subasa.jpg */,
+				CFA942481B4EBEFE00AC0346 /* Oresama.jpg */,
+				CFA9424A1B4EBF2000AC0346 /* Conan.jpg */,
+			);
+			path = ImageManga;
+			sourceTree = "<group>";
+		};
+		CFB5140B1B4D81E2005FF8FA /* TestCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CFB514081B4D7930005FF8FA /* TestCoreData.h */,
+				CFB514091B4D7931005FF8FA /* TestCoreData.m */,
+				CFAE48E91B4E02DA003140AB /* ShowManga.h */,
+				CFAE48EA1B4E02DA003140AB /* ShowManga.m */,
+				CFA9424C1B4ECD7E00AC0346 /* AddChapter.h */,
+				CFA9424D1B4ECD7E00AC0346 /* AddChapter.m */,
+				CFA9424F1B4ECD9500AC0346 /* ShowChapter.h */,
+				CFA942501B4ECD9500AC0346 /* ShowChapter.m */,
+				CFA942521B4ECDA700AC0346 /* AddContent.h */,
+				CFA942531B4ECDA700AC0346 /* AddContent.m */,
+				CFA942551B4ECDB600AC0346 /* ShowContent.h */,
+				CFA942561B4ECDB600AC0346 /* ShowContent.m */,
+			);
+			name = TestCoreData;
+			sourceTree = "<group>";
+		};
+		CFC139571B4F7817000AA73E /* BackGround */ = {
+			isa = PBXGroup;
+			children = (
+				CFF5528C1B54F4990055BF01 /* Loading.png */,
+				CFC139581B4F7817000AA73E /* Background1.png */,
+				CFC1395C1B4F7DCD000AA73E /* Background2.jpg */,
+				CFAA76541B5A02A600FAC355 /* background4.jpg */,
+				CFAA76561B5A069100FAC355 /* background5.jpg */,
+			);
+			path = BackGround;
+			sourceTree = "<group>";
+		};
+		CFC5E21F1B4BD2230065F26A = {
+			isa = PBXGroup;
+			children = (
+				CFF5525A1B54F27C0055BF01 /* SDWebImage */,
+				CFC139571B4F7817000AA73E /* BackGround */,
+				CFA9422F1B4EB70D00AC0346 /* ImageManga */,
+				CFB5140B1B4D81E2005FF8FA /* TestCoreData */,
+				CFC5E25D1B4BD32E0065F26A /* CustomCell */,
+				CFC5E22A1B4BD2240065F26A /* MangaGeek */,
+				CFC5E2471B4BD2260065F26A /* MangaGeekTests */,
+				CFC5E2291B4BD2240065F26A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFC5E2291B4BD2240065F26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E2281B4BD2240065F26A /* MangaGeek.app */,
+				CFC5E2441B4BD2260065F26A /* MangaGeekTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFC5E22A1B4BD2240065F26A /* MangaGeek */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E22F1B4BD2240065F26A /* AppDelegate.h */,
+				CFC5E2301B4BD2240065F26A /* AppDelegate.m */,
+				CFC5E2351B4BD2240065F26A /* ViewController.h */,
+				CFC5E2361B4BD2240065F26A /* ViewController.m */,
+				CFC5E2381B4BD2240065F26A /* Main.storyboard */,
+				CFCB736E1B5681B600540037 /* CacheImage */,
+				CFC5E2651B4BD5A60065F26A /* Controller */,
+				CFC5E2541B4BD29B0065F26A /* json */,
+				CFC5E23B1B4BD2240065F26A /* Images.xcassets */,
+				CFC5E23D1B4BD2240065F26A /* LaunchScreen.xib */,
+				CFC5E2321B4BD2240065F26A /* MangaGeek.xcdatamodeld */,
+				CFC5E22B1B4BD2240065F26A /* Supporting Files */,
+			);
+			path = MangaGeek;
+			sourceTree = "<group>";
+		};
+		CFC5E22B1B4BD2240065F26A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E22C1B4BD2240065F26A /* Info.plist */,
+				CFC5E22D1B4BD2240065F26A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFC5E2471B4BD2260065F26A /* MangaGeekTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E24A1B4BD2260065F26A /* MangaGeekTests.m */,
+				CFC5E2481B4BD2260065F26A /* Supporting Files */,
+			);
+			path = MangaGeekTests;
+			sourceTree = "<group>";
+		};
+		CFC5E2481B4BD2260065F26A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E2491B4BD2260065F26A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFC5E2541B4BD29B0065F26A /* json */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E2551B4BD2C60065F26A /* MangaData.json */,
+				CFABC22C1B4C091C0022E390 /* MangaInfo.json */,
+				CFC5E2571B4BD2D70065F26A /* JsonTest.json */,
+				CFAE48EC1B4E13FC003140AB /* MANGA.json */,
+				CFAE48EE1B4E1412003140AB /* CHAPTER.json */,
+				CFAE48F01B4E1429003140AB /* CONTENT.json */,
+				CF888ABC1B52745D00DB1E78 /* CONTENT_3T.json */,
+				CF888ABE1B52747D00DB1E78 /* CONTENT_GG.json */,
+				CFAE48F21B4E1B70003140AB /* TestParseJson.h */,
+				CFAE48F31B4E1B70003140AB /* TestParseJson.m */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		CFC5E25D1B4BD32E0065F26A /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE48F81B4E6A4A003140AB /* ImageCollectionViewCell.h */,
+				CFAE48F91B4E6A51003140AB /* ImageCollectionViewCell.m */,
+				CFAE48FB1B4E6A57003140AB /* ImageCollectionViewCell.xib */,
+				CFC5E25E1B4BD3470065F26A /* CustomTableCell.h */,
+				CFC5E25F1B4BD34D0065F26A /* CustomTableCell.m */,
+				CFC5E2611B4BD3570065F26A /* CustomTableCell.xib */,
+				CFC5E2631B4BD35D0065F26A /* manga.jpeg */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		CFC5E2651B4BD5A60065F26A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5E2691B4BD6A20065F26A /* ListManga.h */,
+				CFC5E26A1B4BD6A20065F26A /* ListManga.m */,
+				CFAE48F51B4E6936003140AB /* CollecListManga.h */,
+				CFAE48F61B4E6936003140AB /* CollecListManga.m */,
+				CFC139541B4F6E74000AA73E /* ListChapter.h */,
+				CFC139551B4F6E74000AA73E /* ListChapter.m */,
+				CFB64FB61B595319008DBD16 /* Favorite.h */,
+				CFB64FB71B595319008DBD16 /* Favorite.m */,
+				CFA516971B4FF50E005FA715 /* TestContent.h */,
+				CFA516981B4FF50E005FA715 /* TestContent.m */,
+				CFA5169A1B5031E4005FA715 /* PageViewContentChapter.h */,
+				CFA5169B1B5031E4005FA715 /* PageViewContentChapter.m */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CFCB736E1B5681B600540037 /* CacheImage */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB736F1B56824E00540037 /* CacheImage.h */,
+				CFCB73701B56824E00540037 /* CacheImage.m */,
+			);
+			name = CacheImage;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CFF5525A1B54F27C0055BF01 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				CFF5525B1B54F27C0055BF01 /* MKAnnotationView+WebCache.h */,
+				CFF5525C1B54F27C0055BF01 /* MKAnnotationView+WebCache.m */,
+				CFF5525D1B54F27C0055BF01 /* NSData+ImageContentType.h */,
+				CFF5525E1B54F27C0055BF01 /* NSData+ImageContentType.m */,
+				CFF5525F1B54F27C0055BF01 /* SDImageCache.h */,
+				CFF552601B54F27C0055BF01 /* SDImageCache.m */,
+				CFF552611B54F27C0055BF01 /* SDWebImageCompat.h */,
+				CFF552621B54F27C0055BF01 /* SDWebImageCompat.m */,
+				CFF552631B54F27C0055BF01 /* SDWebImageDecoder.h */,
+				CFF552641B54F27C0055BF01 /* SDWebImageDecoder.m */,
+				CFF552651B54F27C0055BF01 /* SDWebImageDownloader.h */,
+				CFF552661B54F27C0055BF01 /* SDWebImageDownloader.m */,
+				CFF552671B54F27C0055BF01 /* SDWebImageDownloaderOperation.h */,
+				CFF552681B54F27C0055BF01 /* SDWebImageDownloaderOperation.m */,
+				CFF552691B54F27C0055BF01 /* SDWebImageManager.h */,
+				CFF5526A1B54F27C0055BF01 /* SDWebImageManager.m */,
+				CFF5526B1B54F27C0055BF01 /* SDWebImageOperation.h */,
+				CFF5526C1B54F27C0055BF01 /* SDWebImagePrefetcher.h */,
+				CFF5526D1B54F27C0055BF01 /* SDWebImagePrefetcher.m */,
+				CFF5526E1B54F27C0055BF01 /* UIButton+WebCache.h */,
+				CFF5526F1B54F27C0055BF01 /* UIButton+WebCache.m */,
+				CFF552701B54F27C0055BF01 /* UIImage+GIF.h */,
+				CFF552711B54F27C0055BF01 /* UIImage+GIF.m */,
+				CFF552721B54F27C0055BF01 /* UIImage+MultiFormat.h */,
+				CFF552731B54F27C0055BF01 /* UIImage+MultiFormat.m */,
+				CFF552741B54F27C0055BF01 /* UIImage+WebP.h */,
+				CFF552751B54F27C0055BF01 /* UIImage+WebP.m */,
+				CFF552761B54F27C0055BF01 /* UIImageView+HighlightedWebCache.h */,
+				CFF552771B54F27C0055BF01 /* UIImageView+HighlightedWebCache.m */,
+				CFF552781B54F27C0055BF01 /* UIImageView+WebCache.h */,
+				CFF552791B54F27C0055BF01 /* UIImageView+WebCache.m */,
+				CFF5527A1B54F27C0055BF01 /* UIView+WebCacheOperation.h */,
+				CFF5527B1B54F27C0055BF01 /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFC5E2271B4BD2230065F26A /* MangaGeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC5E24E1B4BD2260065F26A /* Build configuration list for PBXNativeTarget "MangaGeek" */;
+			buildPhases = (
+				CFC5E2241B4BD2230065F26A /* Sources */,
+				CFC5E2251B4BD2230065F26A /* Frameworks */,
+				CFC5E2261B4BD2230065F26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangaGeek;
+			productName = MangaGeek;
+			productReference = CFC5E2281B4BD2240065F26A /* MangaGeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFC5E2431B4BD2260065F26A /* MangaGeekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC5E2511B4BD2260065F26A /* Build configuration list for PBXNativeTarget "MangaGeekTests" */;
+			buildPhases = (
+				CFC5E2401B4BD2260065F26A /* Sources */,
+				CFC5E2411B4BD2260065F26A /* Frameworks */,
+				CFC5E2421B4BD2260065F26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC5E2461B4BD2260065F26A /* PBXTargetDependency */,
+			);
+			name = MangaGeekTests;
+			productName = MangaGeekTests;
+			productReference = CFC5E2441B4BD2260065F26A /* MangaGeekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFC5E2201B4BD2230065F26A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = NhatMinh;
+				TargetAttributes = {
+					CFC5E2271B4BD2230065F26A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CFC5E2431B4BD2260065F26A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CFC5E2271B4BD2230065F26A;
+					};
+				};
+			};
+			buildConfigurationList = CFC5E2231B4BD2230065F26A /* Build configuration list for PBXProject "MangaGeek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFC5E21F1B4BD2230065F26A;
+			productRefGroup = CFC5E2291B4BD2240065F26A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC5E2271B4BD2230065F26A /* MangaGeek */,
+				CFC5E2431B4BD2260065F26A /* MangaGeekTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFC5E2261B4BD2230065F26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA942451B4EBEF400AC0346 /* Subasa.jpg in Resources */,
+				CFA9423E1B4EB70D00AC0346 /* InuYasha.jpg in Resources */,
+				CFAE48ED1B4E13FC003140AB /* MANGA.json in Resources */,
+				CFC5E2561B4BD2C60065F26A /* MangaData.json in Resources */,
+				CFA942401B4EB70D00AC0346 /* OnePiece.jpg in Resources */,
+				CFA9423D1B4EB70D00AC0346 /* Gintama.jpg in Resources */,
+				CFC5E23A1B4BD2240065F26A /* Main.storyboard in Resources */,
+				CFA942431B4EB70D00AC0346 /* UQHolder.png in Resources */,
+				CFABC22D1B4C091C0022E390 /* MangaInfo.json in Resources */,
+				CFC1395D1B4F7DCD000AA73E /* Background2.jpg in Resources */,
+				CFC139591B4F7817000AA73E /* Background1.png in Resources */,
+				CFA942491B4EBEFE00AC0346 /* Oresama.jpg in Resources */,
+				CFA9423B1B4EB70D00AC0346 /* Doreamon.jpg in Resources */,
+				CFC5E2641B4BD35D0065F26A /* manga.jpeg in Resources */,
+				CFC5E2621B4BD3570065F26A /* CustomTableCell.xib in Resources */,
+				CFAE48F11B4E1429003140AB /* CONTENT.json in Resources */,
+				CFA942411B4EB70D00AC0346 /* Pokemon.jpg in Resources */,
+				CFC5E23F1B4BD2240065F26A /* LaunchScreen.xib in Resources */,
+				CFC5E23C1B4BD2240065F26A /* Images.xcassets in Resources */,
+				CFAA76571B5A069100FAC355 /* background5.jpg in Resources */,
+				CFA942421B4EB70D00AC0346 /* Princess.jpg in Resources */,
+				CFF5528D1B54F4990055BF01 /* Loading.png in Resources */,
+				CFC5E2581B4BD2D70065F26A /* JsonTest.json in Resources */,
+				CF888ABD1B52745D00DB1E78 /* CONTENT_3T.json in Resources */,
+				CFAA76551B5A02A600FAC355 /* background4.jpg in Resources */,
+				CFA9423A1B4EB70D00AC0346 /* Bleach.jpeg in Resources */,
+				CFA9423C1B4EB70D00AC0346 /* DragonBall.jpg in Resources */,
+				CF888ABF1B52747D00DB1E78 /* CONTENT_GG.json in Resources */,
+				CFAE48FC1B4E6A57003140AB /* ImageCollectionViewCell.xib in Resources */,
+				CFAE48EF1B4E1412003140AB /* CHAPTER.json in Resources */,
+				CFA9424B1B4EBF2000AC0346 /* Conan.jpg in Resources */,
+				CFA9423F1B4EB70D00AC0346 /* NarutoShippuden.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5E2421B4BD2260065F26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFC5E2241B4BD2230065F26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF5528B1B54F27C0055BF01 /* UIView+WebCacheOperation.m in Sources */,
+				CFC5E26B1B4BD6A20065F26A /* ListManga.m in Sources */,
+				CFA942541B4ECDA700AC0346 /* AddContent.m in Sources */,
+				CFF552891B54F27C0055BF01 /* UIImageView+HighlightedWebCache.m in Sources */,
+				CFC5E2601B4BD34D0065F26A /* CustomTableCell.m in Sources */,
+				CFC5E2341B4BD2240065F26A /* MangaGeek.xcdatamodeld in Sources */,
+				CFAE48F41B4E1B70003140AB /* TestParseJson.m in Sources */,
+				CFF552831B54F27C0055BF01 /* SDWebImageManager.m in Sources */,
+				CFF552801B54F27C0055BF01 /* SDWebImageDecoder.m in Sources */,
+				CFA5169C1B5031E4005FA715 /* PageViewContentChapter.m in Sources */,
+				CFA516991B4FF50E005FA715 /* TestContent.m in Sources */,
+				CFF552841B54F27C0055BF01 /* SDWebImagePrefetcher.m in Sources */,
+				CFF5528A1B54F27C0055BF01 /* UIImageView+WebCache.m in Sources */,
+				CFAE48EB1B4E02DA003140AB /* ShowManga.m in Sources */,
+				CFC5E2311B4BD2240065F26A /* AppDelegate.m in Sources */,
+				CFA942571B4ECDB600AC0346 /* ShowContent.m in Sources */,
+				CFF552861B54F27C0055BF01 /* UIImage+GIF.m in Sources */,
+				CFF552881B54F27C0055BF01 /* UIImage+WebP.m in Sources */,
+				CFF5527D1B54F27C0055BF01 /* NSData+ImageContentType.m in Sources */,
+				CFF5527F1B54F27C0055BF01 /* SDWebImageCompat.m in Sources */,
+				CFA942511B4ECD9500AC0346 /* ShowChapter.m in Sources */,
+				CFC5E2371B4BD2240065F26A /* ViewController.m in Sources */,
+				CFCB73711B56824E00540037 /* CacheImage.m in Sources */,
+				CFF5527E1B54F27C0055BF01 /* SDImageCache.m in Sources */,
+				CFF552811B54F27C0055BF01 /* SDWebImageDownloader.m in Sources */,
+				CFA9424E1B4ECD7E00AC0346 /* AddChapter.m in Sources */,
+				CFC139561B4F6E74000AA73E /* ListChapter.m in Sources */,
+				CFF552871B54F27C0055BF01 /* UIImage+MultiFormat.m in Sources */,
+				CFF552851B54F27C0055BF01 /* UIButton+WebCache.m in Sources */,
+				CFC5E22E1B4BD2240065F26A /* main.m in Sources */,
+				CFF5527C1B54F27C0055BF01 /* MKAnnotationView+WebCache.m in Sources */,
+				CFF552821B54F27C0055BF01 /* SDWebImageDownloaderOperation.m in Sources */,
+				CFAE48FA1B4E6A51003140AB /* ImageCollectionViewCell.m in Sources */,
+				CFB64FB81B595319008DBD16 /* Favorite.m in Sources */,
+				CFAE48F71B4E6936003140AB /* CollecListManga.m in Sources */,
+				CFB5140A1B4D7931005FF8FA /* TestCoreData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5E2401B4BD2260065F26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC5E24B1B4BD2260065F26A /* MangaGeekTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFC5E2461B4BD2260065F26A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC5E2271B4BD2230065F26A /* MangaGeek */;
+			targetProxy = CFC5E2451B4BD2260065F26A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFC5E2381B4BD2240065F26A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC5E2391B4BD2240065F26A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFC5E23D1B4BD2240065F26A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC5E23E1B4BD2240065F26A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFC5E24C1B4BD2260065F26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFC5E24D1B4BD2260065F26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFC5E24F1B4BD2260065F26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MangaGeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFC5E2501B4BD2260065F26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MangaGeek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFC5E2521B4BD2260065F26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MangaGeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangaGeek.app/MangaGeek";
+			};
+			name = Debug;
+		};
+		CFC5E2531B4BD2260065F26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MangaGeekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MangaGeek.app/MangaGeek";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFC5E2231B4BD2230065F26A /* Build configuration list for PBXProject "MangaGeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5E24C1B4BD2260065F26A /* Debug */,
+				CFC5E24D1B4BD2260065F26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC5E24E1B4BD2260065F26A /* Build configuration list for PBXNativeTarget "MangaGeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5E24F1B4BD2260065F26A /* Debug */,
+				CFC5E2501B4BD2260065F26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC5E2511B4BD2260065F26A /* Build configuration list for PBXNativeTarget "MangaGeekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5E2521B4BD2260065F26A /* Debug */,
+				CFC5E2531B4BD2260065F26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFC5E2321B4BD2240065F26A /* MangaGeek.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFC5E2331B4BD2240065F26A /* MangaGeek.xcdatamodel */,
+			);
+			currentVersion = CFC5E2331B4BD2240065F26A /* MangaGeek.xcdatamodel */;
+			path = MangaGeek.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFC5E2201B4BD2230065F26A /* Project object */;
+}
