@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"viewDidload............");
+    NSLog(@"============= TEST GITHUB ===============");
     
      //[self parseJSONFile];
     // Do any additional setup after loading the view, typically from a nib.
