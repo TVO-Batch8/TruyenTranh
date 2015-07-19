@@ -137,8 +137,13 @@ static NSString * const CellID = @"Cell";
         }
         
         // Remove device from table view
-        //[self.arrayChapterIDFavorite removeObjectAtIndex:indexPath.row];
-        //[self.tableListFavorite deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        if (!self.arrayChapterNameFavorite.count) {
+            [self.arrayChapterNameFavorite addObject:@""];
+        }
+        
+        NSLog(@"");
+       [self.arrayChapterIDFavorite removeObjectAtIndex:indexPath.row];
+       [self.tableListFavorite deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

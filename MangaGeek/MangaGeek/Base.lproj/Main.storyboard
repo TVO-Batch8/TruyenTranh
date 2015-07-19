@@ -436,7 +436,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aok-ac-0tB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-951" y="1672"/>
+            <point key="canvasLocation" x="-1001" y="1688"/>
         </scene>
         <!--Test Parse Json-->
         <scene sceneID="Ba1-VZ-U5V">
