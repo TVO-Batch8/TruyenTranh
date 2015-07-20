@@ -44,6 +44,7 @@
 		CFC139561B4F6E74000AA73E /* ListChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC139551B4F6E74000AA73E /* ListChapter.m */; };
 		CFC139591B4F7817000AA73E /* Background1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC139581B4F7817000AA73E /* Background1.png */; };
 		CFC1395D1B4F7DCD000AA73E /* Background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFC1395C1B4F7DCD000AA73E /* Background2.jpg */; };
+		CFC249A71B5CD65B00D2F748 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC249A61B5CD65B00D2F748 /* Reachability.m */; };
 		CFC5E22E1B4BD2240065F26A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E22D1B4BD2240065F26A /* main.m */; };
 		CFC5E2311B4BD2240065F26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E2301B4BD2240065F26A /* AppDelegate.m */; };
 		CFC5E2341B4BD2240065F26A /* MangaGeek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFC5E2321B4BD2240065F26A /* MangaGeek.xcdatamodeld */; };
@@ -139,6 +140,8 @@
 		CFC139551B4F6E74000AA73E /* ListChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListChapter.m; sourceTree = "<group>"; };
 		CFC139581B4F7817000AA73E /* Background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background1.png; sourceTree = "<group>"; };
 		CFC1395C1B4F7DCD000AA73E /* Background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background2.jpg; sourceTree = "<group>"; };
+		CFC249A51B5CD65B00D2F748 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CFC249A61B5CD65B00D2F748 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CFC5E2281B4BD2240065F26A /* MangaGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC5E22C1B4BD2240065F26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC5E22D1B4BD2240065F26A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -268,9 +271,19 @@
 			path = BackGround;
 			sourceTree = "<group>";
 		};
+		CFC249A41B5CD63E00D2F748 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				CFC249A51B5CD65B00D2F748 /* Reachability.h */,
+				CFC249A61B5CD65B00D2F748 /* Reachability.m */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
 		CFC5E21F1B4BD2230065F26A = {
 			isa = PBXGroup;
 			children = (
+				CFC249A41B5CD63E00D2F748 /* Notification */,
 				CFF5525A1B54F27C0055BF01 /* SDWebImage */,
 				CFC139571B4F7817000AA73E /* BackGround */,
 				CFA9422F1B4EB70D00AC0346 /* ImageManga */,
@@ -572,6 +585,7 @@
 				CFF552891B54F27C0055BF01 /* UIImageView+HighlightedWebCache.m in Sources */,
 				CFC5E2601B4BD34D0065F26A /* CustomTableCell.m in Sources */,
 				CFC5E2341B4BD2240065F26A /* MangaGeek.xcdatamodeld in Sources */,
+				CFC249A71B5CD65B00D2F748 /* Reachability.m in Sources */,
 				CFAE48F41B4E1B70003140AB /* TestParseJson.m in Sources */,
 				CFF552831B54F27C0055BF01 /* SDWebImageManager.m in Sources */,
 				CFF552801B54F27C0055BF01 /* SDWebImageDecoder.m in Sources */,

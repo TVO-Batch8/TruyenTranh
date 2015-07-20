@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
 
 @interface AppDelegate ()
-
+@property (strong, nonatomic) Reachability *reachability;
 @end
 
 @implementation AppDelegate
@@ -25,8 +26,39 @@
     
     NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://4.bp.blogspot.com/-l3s5k_YNw5U/VFuE27DPpRI/AAAAAAAAQPw/gfBAoxdrci8/s0/naruto-truyentranhtuan-com-chap-700-trang-001.jpg"]];
     
+    
     UIImage *image = [UIImage imageWithData:imageData];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNetworkStatusNotification:) name:kReachabilityChangedNotification object:nil];
+    
+    self.reachability = [Reachability reachabilityForInternetConnection];
+    [self.reachability startNotifier];
+
+    
+    
+    
     return YES;
+}
+
+- (void)handleNetworkStatusNotification:(NSNotification *)note {
+    Reachability* curReach = [note object];
+    NetworkStatus status = curReach.currentReachabilityStatus;
+    NSString *statusString;
+    switch (status) {
+        case NotReachable:{
+            statusString = @"Not Reachable";
+            
+            UIAlertView *Saved =[[UIAlertView alloc]initWithTitle:@"Khong Co Ket Noi " message:@"Vui long ket noi de xem online hoac chi xem offline" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil] ;
+            [Saved show];
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
+   // self.networkConnectionStatusLbl.text = statusString;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
