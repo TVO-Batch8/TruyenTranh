@@ -19,6 +19,7 @@ static NSString * const CellID = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableListManga registerNib:[UINib nibWithNibName:@"CustomTableCell" bundle:nil] forCellReuseIdentifier:CellID];
+    //[self.searchbarManga setHidden:YES];
     
     self.arrayThumbail=[[NSMutableArray alloc]init];
     self.arrayMangaName=[[NSMutableArray alloc]init];
@@ -149,6 +150,32 @@ static NSString * const CellID = @"Cell";
     }
     
 }
+
+bool isSearch=NO;
+//- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+//    isSearch=YES;
+//    NSMutableArray *arraySearch=[[NSMutableArray alloc]init];
+//    
+//    for(int i=0;i<self.arrayMangaName.count;i++){
+//        if ([[self.arrayMangaName objectAtIndex:i] isEqualToString:self.searchbarManga.text]) {
+//            
+//            NSLog(@" tim thay ");
+//            [arraySearch addObject:[self.arrayMangaName objectAtIndex:i]];
+//            
+//            
+//            
+//            
+//        }// if
+//        
+//        //[self.arrayMangaName removeAllObjects];
+//        
+//        
+//    }
+//    self.arrayMangaName = arraySearch;
+//    
+//    [self.tableListManga reloadData];
+//}
+
 
 
 

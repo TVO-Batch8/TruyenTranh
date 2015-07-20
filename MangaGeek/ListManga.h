@@ -11,9 +11,10 @@
 #import "ListChapter.h"
 #import "CustomTableCell.h"
 
-@interface ListManga : UIViewController
+@interface ListManga : UIViewController<UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableListManga;
+//@property (weak, nonatomic) IBOutlet UISearchBar *searchbarManga;
 
 @property (strong,nonatomic) NSMutableArray *arrayListManga;
 @property (strong,nonatomic) NSMutableArray *arrayChapter;

@@ -29,6 +29,7 @@ static NSString * const CellID = @"Cell";
     
     NSFetchRequest *fetchRequest4 = [[NSFetchRequest alloc] initWithEntityName:@"FAVORITE"];
     self.arrayFavorite=[[managedObjectContext executeFetchRequest:fetchRequest4 error:nil] mutableCopy];
+    
     if (!self.arrayFavorite.count) {
         UIAlertView *Saved =[[UIAlertView alloc]initWithTitle:@"FAVORITE" message:@"danh sach rong" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil] ;
         [Saved show];
@@ -46,7 +47,12 @@ static NSString * const CellID = @"Cell";
         [self.arrayImageFavorite addObject:[[self.arrayFavorite objectAtIndex:i] valueForKey:@"imageURL"]];
     }
 
-    
+//    if (!self.arrayChapterNameFavorite.count) {
+//        UIAlertView *Saved =[[UIAlertView alloc]initWithTitle:@"FAVORITE" message:@"danh sach rong" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil] ;
+//        [Saved show];
+//        return;
+//    }
+
     
     
     
@@ -60,13 +66,8 @@ static NSString * const CellID = @"Cell";
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+
     
-   
-    
-    
-    
-    
-    [self.tableListFavorite reloadData];
 }
 - (NSManagedObjectContext *)managedObjectContext
 {
@@ -87,12 +88,13 @@ static NSString * const CellID = @"Cell";
     
     // Return the number of rows in the section.
     
-    if (self.arrayChapterIDFavorite.count) {
-        return self.arrayChapterIDFavorite.count;
+    if (self.arrayChapterNameFavorite.count==0) {
+        //return self.arrayChapterNameFavorite.count;
+        return 1;
     }
     else
     {
-        return 10;
+        return self.arrayChapterNameFavorite.count ;
     }
     //return 20;
 }
@@ -110,7 +112,10 @@ static NSString * const CellID = @"Cell";
         //NSDictionary = @{@"key1": @"value 1", @"key 2":@"value 2"};
     }
     //[cell loadImage:[NSString stringWithFormat:@"%@",[self.arrayThumbail objectAtIndex:indexPath.row]]];
-    
+    if (self.arrayChapterNameFavorite.count==0) {
+        [self.arrayChapterNameFavorite addObject:@" Danh sach rong"];
+        
+    }
     [cell loadTilte:[NSString stringWithFormat:@"%@",  [self.arrayChapterNameFavorite objectAtIndex:indexPath.row]  ]];
     [cell loadDate:[NSString stringWithFormat:@"Today"]];
     [cell hideButton];
@@ -137,13 +142,17 @@ static NSString * const CellID = @"Cell";
         }
         
         // Remove device from table view
-        if (!self.arrayChapterNameFavorite.count) {
-            [self.arrayChapterNameFavorite addObject:@""];
-        }
+        [self.arrayChapterNameFavorite removeObjectAtIndex:indexPath.row];
         
         NSLog(@"");
+        
        [self.arrayChapterIDFavorite removeObjectAtIndex:indexPath.row];
-       [self.tableListFavorite deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//       [self.tableListFavorite deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self.tableListFavorite reloadData];
+        if (self.arrayChapterNameFavorite.count==0) {
+            [self.tableListFavorite setHidden:YES];
+        }
     }
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

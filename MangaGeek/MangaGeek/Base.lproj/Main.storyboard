@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fzf-AO-1Mh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--MANGA-->
@@ -238,7 +237,7 @@
         <!--List Manga-->
         <scene sceneID="wNN-R0-D3c">
             <objects>
-                <viewController id="aYh-Bh-Pop" customClass="ListManga" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="aYh-Bh-Pop" customClass="ListManga" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MNL-Yc-j3W"/>
                         <viewControllerLayoutGuide type="bottom" id="2dq-kz-rVK"/>
@@ -248,7 +247,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wtu-Dq-BSe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="aYh-Bh-Pop" id="zGQ-lo-zsY"/>
@@ -258,10 +257,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2dq-kz-rVK" firstAttribute="top" secondItem="wtu-Dq-BSe" secondAttribute="bottom" id="9mT-xr-Od2"/>
-                            <constraint firstItem="wtu-Dq-BSe" firstAttribute="leading" secondItem="kVw-yS-WUq" secondAttribute="leadingMargin" constant="-16" id="Aga-Px-e2s"/>
-                            <constraint firstItem="wtu-Dq-BSe" firstAttribute="top" secondItem="kVw-yS-WUq" secondAttribute="topMargin" id="cal-u7-4ED"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wtu-Dq-BSe" secondAttribute="trailing" constant="-16" id="dPj-T5-YRx"/>
+                            <constraint firstAttribute="trailing" secondItem="wtu-Dq-BSe" secondAttribute="trailing" id="MTB-bk-HKs"/>
+                            <constraint firstItem="wtu-Dq-BSe" firstAttribute="leading" secondItem="kVw-yS-WUq" secondAttribute="leading" id="f8M-XX-pGm"/>
+                            <constraint firstItem="wtu-Dq-BSe" firstAttribute="top" secondItem="MNL-Yc-j3W" secondAttribute="bottom" id="lJX-9x-Ry7"/>
+                            <constraint firstItem="2dq-kz-rVK" firstAttribute="top" secondItem="wtu-Dq-BSe" secondAttribute="bottom" id="rk9-ra-ESa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="List Manga" id="hyt-Yr-Kb7">
@@ -675,6 +674,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bDr-XR-sZ5"/>
+        <segue reference="A5Q-uw-owQ"/>
     </inferredMetricsTieBreakers>
 </document>
